@@ -1,0 +1,59 @@
+GAMS 42.3.0  dacf7d8e Mar 2, 2023           WEX-WEI x86 64bit/MS Windows - 04/05/23 21:52:21 Page 1
+WITCH 5.2.0
+C o m p i l a t i o n
+
+
+  29  $error 'data_witch17/ does not exist or is corrupted'
+****       $333
+**** 333  $Error encountered - see listing for details
+  79  $error 'Please calibrate the model first (--calibration=1)'
+****       $333
+**** LINE     95 INPUT       C:\GitHub\witchmodel\run_witch.gms
+**** 333  $Error encountered - see listing for details
+ 203  $include data_witch17/regions.conf
+****                                   $282
+**** LINE      7 BATINCLUDE  C:\GitHub\witchmodel\modules\core_regions.gms
+**** LINE     15 BATINCLUDE  C:\GitHub\witchmodel\modules.gms
+                             %1  conf
+**** LINE    127 INPUT       C:\GitHub\witchmodel\run_witch.gms
+**** 282  Unable to open include file
+****         Hint: Does the filename need to be quoted?
+ 204  $abort "regional mapping n='witch17' not matching data mapping '%nmapping%'"
+****       $343
+**** LINE      8 BATINCLUDE  C:\GitHub\witchmodel\modules\core_regions.gms
+**** LINE     15 BATINCLUDE  C:\GitHub\witchmodel\modules.gms
+                             %1  conf
+**** LINE    127 INPUT       C:\GitHub\witchmodel\run_witch.gms
+**** 343  Abort triggered by above statement
+
+**** 4 ERROR(S)   0 WARNING(S)
+GAMS 42.3.0  dacf7d8e Mar 2, 2023           WEX-WEI x86 64bit/MS Windows - 04/05/23 21:52:21 Page 2
+WITCH 5.2.0
+Include File Summary
+
+
+   SEQ   GLOBAL TYPE      PARENT   LOCAL  FILENAME
+
+     1        1 INPUT          0       0  C:\GitHub\witchmodel\run_witch.gms
+     2       28 IF EXIST       1      28  C:\GitHub\witchmodel\data_witch17\n.inc
+     3       78 IF EXIST       1      94  C:\GitHub\witchmodel\data_witch17\data_calib.gdx
+     4      108 BATINCLUDE     1     127  .C:\GitHub\witchmodel\modules.gms
+     5      117 BATINCLUDE     4       9  ..C:\GitHub\witchmodel\modules\core_algorithm.gms
+     6      169 BATINCLUDE     4      12  ..C:\GitHub\witchmodel\modules\core_time.gms
+     7      196 BATINCLUDE     4      15  ..C:\GitHub\witchmodel\modules\core_regions.gms
+
+
+COMPILATION TIME     =        0.063 SECONDS      2 MB  42.3.0 dacf7d8e WEX-WEI
+
+
+USER: Course License                                 S230216|0002AO-GEN
+      Fondazione CMCC, Complesso Ecotekne                       DCE1910
+      License for teaching and research at degree granting institutions
+
+
+**** FILE SUMMARY
+
+Input      C:\GitHub\witchmodel\run_witch.gms
+Output     C:\GitHub\witchmodel\run_witch.lst
+
+**** USER ERROR(S) ENCOUNTERED

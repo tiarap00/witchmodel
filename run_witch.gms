@@ -98,13 +98,13 @@ $endif.cb
 * MODEL SETUP
 
 * Enable climate equations
-*$setglobal solve_climate
+$setglobal solve_climate
 
 * Enable feedback
 *$setglobal damage_feedback
 
 * Toggle adaptation
-*$setglobal adaptation 'YES'
+$setglobal adaptation 'YES'
 
 
 
