@@ -145,4 +145,5 @@ $batinclude modules 'summary_report'
 $include 'post/gdx'
 
 $show
-execute "gdx2sqlite -i results1.gdx -o results1.db"
+
+execute "gdx2sqlite -i %resdir%%outgdx%.gdx -o %resdir%%outgdx%.db"
