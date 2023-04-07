@@ -26,7 +26,7 @@ $setglobal solvelink %solvelink.AsyncGrid%
 $endif.x
 
 * Solver tuning
-$if not set solver $setglobal solver conopt
+$if not set solver $setglobal solver conopt4
 
 $if not set conopt_tolerance $setglobal conopt_tolerance 12
 
