@@ -16,7 +16,7 @@ $if %baseline%=='ssp5' $setglobal adap_efficiency ssp1_ssp5
 $if set damage_feedback $if not set solve_climate $abort 'ERROR: solve_climate is required by damage_feedback.'
 $if set solve_climate $if not set adaptation $abort 'ERROR: solve_climate requires "adaptation" to be defined as "YES" or "NO".'
 
-* $if set damage_feedback $if not %n%=='witch13' $abort damage function is compatible only with witch13
+$if set damage_feedback $if not %n%=='witch13' $abort damage function is compatible only with witch13
 
 * Define damage cost function
 $setglobal damcost 'climcost'
